@@ -1,10 +1,7 @@
 package com.example.myapplication
 
-import android.R
-import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import android.widget.Button
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
@@ -17,8 +14,17 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.myapplication.ui.theme.MyApplicationTheme
 
 class MainActivity : ComponentActivity() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        val message = "onCreate"
+        val TAG = "jopaAnd"
+        Log.w(TAG, message);
+        Log.v(TAG, message);
+        Log.i(TAG, message);
+        Log.e(TAG, message);
+        Log.d(TAG, message);
         setContent {
             MyApplicationTheme {
                 // A surface container using the 'background' color from the theme
@@ -31,11 +37,7 @@ class MainActivity : ComponentActivity() {
 
 
 
-        Log.w("myTag2w", "This is my message2w");
-        Log.v("myTag2v", "This is my message2v");
-        Log.i("myTag2i", "This is my message2i");
-        Log.e("myTag2e", "This is my message2e");
-        Log.d("myTag2d", "This is my message2d");
+
         myButton()
 
 
@@ -44,6 +46,63 @@ class MainActivity : ComponentActivity() {
 
 
     }
+
+
+    override fun onStart() {
+        super.onStart()
+        val message = "onStart"
+        val TAG = "jopaAnd"
+        Log.w(TAG, message);
+        Log.v(TAG, message);
+        Log.i(TAG, message);
+        Log.e(TAG, message);
+        Log.d(TAG, message);
+    }
+
+    override fun onResume() {
+        super.onResume()
+        val message = "onResume"
+        val TAG = "jopaAnd"
+        Log.w(TAG, message);
+        Log.v(TAG, message);
+        Log.i(TAG, message);
+        Log.e(TAG, message);
+        Log.d(TAG, message);
+    }
+
+    override fun onPause() {
+        super.onPause()
+        val message = "onPause"
+        val TAG = "jopaAnd"
+        Log.w(TAG, message);
+        Log.v(TAG, message);
+        Log.i(TAG, message);
+        Log.e(TAG, message);
+        Log.d(TAG, message);
+    }
+
+    override fun onStop() {
+        super.onStop()
+        val message = "onStop"
+        val TAG = "jopaAnd"
+        Log.w(TAG, message);
+        Log.v(TAG, message);
+        Log.i(TAG, message);
+        Log.e(TAG, message);
+        Log.d(TAG, message);
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        val message = "onDestroy"
+        val TAG = "jopaAnd"
+        Log.w(TAG, message);
+        Log.v(TAG, message);
+        Log.i(TAG, message);
+        Log.e(TAG, message);
+        Log.d(TAG, message);
+    }
+
 }
 
 
