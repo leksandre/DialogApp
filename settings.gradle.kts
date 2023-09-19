@@ -17,3 +17,4 @@ rootProject.name = "My Application"
 include(":app")
 include(":logintap")
 include(":nativelib")
+include(":nativelib2")
